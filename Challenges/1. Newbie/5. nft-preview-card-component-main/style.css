@@ -1,0 +1,235 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Outfit', sans-serif;
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+    --very-dark-blue-main-BG: hsl(217, 54%, 11%);
+    --very-dark-blue-card-BG: hsl(216, 50%, 16%);
+    --very-dark-blue-line: hsl(215, 32%, 27%);
+}
+
+body {
+    background-color: var(--very-dark-blue-main-BG);
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.bod {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    border-radius: 10px;
+    background-color: var(--very-dark-blue-card-BG);
+
+    width: 330px;
+}
+
+.bod #nft_img {
+    border-radius: 5px;
+
+    max-width: 280px;
+    margin: 25px 20px 20px 20px;
+}
+
+#cian {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 5px;
+
+    max-width: 280px;
+    height: 276px;
+    margin: -302px auto 20px auto;
+}
+
+#cian img {
+    border-radius: 5px;
+    background-image: linear-gradient(to bottom, hsl(178, 100%, 50%, 0.5), hsl(178, 100%, 50%, 0.7) );
+    opacity: 0;
+    transition-duration: .4s;
+
+    padding: 115px;
+}
+
+#cian img:hover {
+    cursor: pointer;
+    opacity: 1;
+    transition-duration: .4s;
+}
+
+h3 {
+    color: white;
+    font-weight: 600;
+    transition-duration: .4s;
+
+    margin: 0px 150px 15px 20px;
+}
+
+h3:hover {
+    color: var(--cyan);
+    cursor: pointer;
+    transition-duration: .4s;
+}
+
+p {
+    color: var(--soft-blue);
+    font-weight: 300;
+
+    margin: 0px 10px 15px 25px;
+}
+
+.h4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0px 0px 15px 0px;
+}
+
+.h4 #eth {
+    margin: 1px 5px 0px -20px;
+    width: 12.5px;
+    height: 20px;
+}
+
+.h4 #clock {
+    margin: 1px -30px 0px 20px;
+    width: 25px;
+    height: 25px;
+}
+
+#h4_1 {
+    color: var(--cyan);
+
+    margin: 0px 60px 0px 0px;
+}
+
+#h4_2 {
+    color: var(--soft-blue);
+    
+    margin: 0px -20px 0px 40px;
+}
+
+#hr {
+    color: var(--very-dark-blue-card-BG);
+    background-color: var(--very-dark-blue-line);
+    
+    width: 84%;
+    height: 1px;
+}
+
+.img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 15px 40px 20px 0px;
+}
+
+.img img {
+    border: 1px solid white;
+    border-radius: 50%;
+
+    width: 35px;
+    margin: 0px 20px 0px 0px;
+}
+
+#crea {
+    color: var(--soft-blue);
+    font-weight: 300;
+}
+
+#crea a {
+    color: white;
+    font-weight: 100;
+    text-decoration: none;
+    transition-duration: .4s;
+}
+
+#crea a:hover {
+    color: var(--cyan);
+    transition-duration: .4s;
+}
+
+@media screen and (max-width: 320px) {
+    .bod {
+        max-width: 270px;
+        max-height: 440px;
+    }
+
+    .bod #nft_img {
+        max-width: 220px;
+        margin: 25px 20px 15px 20px;
+
+    }
+
+    #cian img {
+        padding: 85px;
+        margin: 90px auto 20px auto;
+    }
+
+    h3 {  
+        margin: 0px 90px 7.5px 20px;
+    }
+
+    p {
+        font-size: 14px;
+        margin: 0px 10px 7.5px 25px;
+    }
+    
+    #h4_1 {
+        color: var(--cyan);
+    
+        margin: 0px 15px 0px 0px;
+    }
+
+    #hr {
+        width: 81%;
+        margin: -5px 0px -5px 0px;
+    }
+    
+    .img {
+        margin: 15px 0px 20px 0px;
+    }
+
+    #crea {
+        margin: 0px 0px 0px -5px;
+    }
+
+    h4 {
+        font-size: 15px;
+    }
+
+    .h4 h4 {
+        font-size: 15px;
+    }
+
+    .h4 #clock {
+        margin: 1px -35px 0px 20px;
+        width: 25px;
+        height: 25px;
+    }
+    
+    .img img {
+        border: 1px solid white;
+        border-radius: 50%;
+    
+        width: 27.5px;
+        margin: 0px 15px 0px -15px;
+    }
+
+    #crea {
+        font-size: 14px;
+    }
+}

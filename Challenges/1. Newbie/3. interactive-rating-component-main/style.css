@@ -1,0 +1,219 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Overpass&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    --orange: hsl(25, 97%, 53%);
+    --light-gray: hsl(217, 12%, 63%);
+    --medium-gray: hsl(216, 12%, 54%);
+    --dark-blue: hsl(213, 19%, 18%);
+    --very-dark-blue: hsl(216, 12%, 8%);
+    --back-div-numbers: hsl(0, 0%, 50%, 0.150);
+}
+
+body {
+    background-color: var(--very-dark-blue);
+}
+
+#rating {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    border-radius: 20px;
+    background-image: linear-gradient(to bottom, hsl(213, 19%, 18%), hsl(213, 19%, 18%, 0.8), hsl(213, 19%, 18%, 0.6), hsl(213, 19%, 18%, 0.5));
+    
+    width: 335px;
+    height: 350px;
+}
+
+#rating #star {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    border-radius: 50%;
+    background-color: rgba(128, 128, 128, 0.150);
+
+    height: 50px;
+    margin: 30px 0px 20px 20px;
+    width: 50px;
+}
+
+h2 {
+    color: white;
+    font-family: 'Overpass', sans-serif;
+
+    margin: 0px 0px 15px 20px;
+}
+
+p {
+    color: var(--light-gray);
+    font-family: 'Overpass', sans-serif;
+    font-weight: lighter;
+    font-size: 15px;
+
+    margin: 0px 15px 0px 20px;
+}
+
+#rating #numbers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#rating .numbers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    border-radius: 50%;
+    background-color: var(--back-div-numbers);
+    color: var(--light-gray);
+    font-family: 'Overpass', sans-serif;
+    transition-duration: 0.4s;
+
+    height: 50px;
+    margin: 20px 10px 0px 0px;
+    width: 50px;
+}
+
+#rating .numbers:hover {
+    background-color: var(--medium-gray);
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+#rating a {
+    display: flex;
+    justify-content: center;
+
+    background-color: var(--orange);
+    border-radius: 20px;
+    color: white;
+    font-family: 'Overpass', sans-serif;
+    text-decoration: none;
+    transition-duration: 0.4s;
+
+    margin: 5% auto 0px auto;
+    padding: 10px;
+    width: 80%;
+}
+
+#rating a:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+    color: var(--orange);
+    transition-duration: 0.4s;
+}
+
+#thank {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    border-radius: 20px;
+    background-image: linear-gradient(to bottom, hsl(213, 19%, 18%), hsl(213, 19%, 18%, 0.8), hsl(213, 19%, 18%, 0.6), hsl(213, 19%, 18%, 0.5));
+    
+    width: 335px;
+    height: 350px;
+}
+
+#thank #img_thank {
+    margin: 20px 0px 30px -10px;
+}
+
+h5 {
+    border-radius: 30px;
+    background-color: var(--back-div-numbers);
+    color: var(--orange);
+    font-family: 'Overpass', sans-serif;
+    font-weight: 100;
+    text-align: center;
+
+    padding: 5px 10px 5px 10px;
+    margin: -10px 0px 20px -10px;
+    width: 160px;
+}
+
+h1 {
+    color: white;
+    font-family: 'Overpass', sans-serif;
+
+    margin: 0px 0px 10px -10px;
+}
+
+#thank p {
+    font-size: 14.5px;
+    text-align: center;
+
+    margin: 0px 10px 20px 10px;
+    padding: 0px 0px 0px 0px;
+}
+
+.attribution { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+
+    position: absolute;
+    top: 90%;
+
+
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+    text-decoration: none;
+}
+
+@media screen and (max-width: 320px) {
+    #rating, #thank {
+        max-width: 95%;
+        height: 335px;
+    }
+
+    #rating #star {
+        margin: 30px 0px 15px 20px;
+    }
+
+    h2 {
+        margin: 0px 0px 15px 20px;
+    }
+
+    #rating #numbers {
+        margin: 0px 0px 0px 10px;
+    }
+
+    #rating .numbers {
+        width: 45px;
+        height: 45px;
+        margin: 15px 10px 0px 0px;
+    }
+
+    #rating a { 
+        margin: 20px auto 0px auto;
+    }
+
+    #thank {
+        width: 95%;
+    }
+    
+    #thank p, p {
+        font-size: 0.8em;
+    }
+
+    h2, h1 {
+        font-size: 1.5em;
+    }
+}

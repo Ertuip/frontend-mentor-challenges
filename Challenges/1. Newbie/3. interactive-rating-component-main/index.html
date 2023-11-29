@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Interactive rating component</title>
+</head>
+<body>
+
+  <!-- Rating state start -->
+  <div id="rating">
+    <div id="star"><img src="images/icon-star.svg" alt="Icone SVG de Estrela"></div> <!--SVG-->
+
+    <h2>How did we do?</h2>
+    <p>Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
+
+    <div id="numbers">
+      <div class="numbers" onclick="trocar_cor(this, 'div2', 'div3', 'div4', 'div5')" id="div1">1</div>
+      <div class="numbers" onclick="trocar_cor(this, 'div1', 'div3', 'div4', 'div5')" id="div2">2</div>
+      <div class="numbers" onclick="trocar_cor(this, 'div1', 'div2', 'div4', 'div5')" id="div3">3</div>
+      <div class="numbers" onclick="trocar_cor(this, 'div1', 'div2', 'div3', 'div5')" id="div4">4</div>
+      <div class="numbers" onclick="trocar_cor(this, 'div1', 'div2', 'div3', 'div4')" id="div5">5</div>
+    </div>
+  
+    <a href="#" onclick="thankfunc()">SUBMIT</a>
+  </div>
+  <div id="thank">
+    <img src="images/illustration-thank-you.svg" alt="Imagem SVG" id="img_thank">
+    <h5 id="h5dem"></h5>
+    <h1>Thank you!</h1>
+    <p>
+      We appreciate you taking the time to give a rating.<br> If you ever need more support,
+      don't hesitate to<br> get in touch!
+    </p>
+  </div>
+
+  <!-- Thank you state end -->
+
+  
+  <div class="attribution">
+    <p>
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a><br>
+      Coded by <a href="https://github.com/Ertuip/">@Ertuip</a>.
+    </p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
